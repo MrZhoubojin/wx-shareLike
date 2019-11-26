@@ -19,20 +19,20 @@
     "list": [
       {
         "selectedIconPath": "/static/image/popular@highlight.png",
-        "pagePath": "pages/popular/index",
         "iconPath": "/static/image/popular.png",
+        "pagePath": "pages/popular/index",
         "text": "流行"
       },
       {
         "selectedIconPath": "/static/image/book@highlight.png",
-        "pagePath": "pages/book/index",
         "iconPath": "/static/image/book.png",
+        "pagePath": "pages/book/index",
         "text": "书单"
       },
       {
         "selectedIconPath": "/static/image/my@highlight.png",
-        "pagePath": "pages/my/index",
         "iconPath": "/static/image/my.png",
+        "pagePath": "pages/my/index",
         "text": "我的"
       }
     ]
