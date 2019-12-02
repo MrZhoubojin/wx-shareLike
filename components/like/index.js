@@ -1,4 +1,5 @@
 // components/like/index.js
+
 Component({
   /**
    * 组件的属性列表
@@ -21,7 +22,12 @@ Component({
    */
   methods: {
     onIsLike (event) {
-      console.log(event)
+      let isLike = !this.properties.isLike
+      let count = this.properties.count
+      this.setData({
+        count: isLike ? count + 1 : count - 1,
+        isLike: isLike
+      })
     }
   }
 })

@@ -1,2 +1,9 @@
 <!--pages/popular/index.wxml-->
-<z-like />
+<view class="contaier">
+    <view class="contaier-public">
+        <z-like count="{{ popularData.fav_nums }}" isLike="{{ popularData.like_status === 0 ? false : true }}" />
+        <z-date index="{{ popularData.index.toString() > 0 ? popularData.index.toString() : '0' + popularData.index }}" />
+    </view>
+    <z-movie bgImg="{{ popularData.image }}" content="{{ popularData.content }}" title="{{ popularData.title }}" />
+    <z-nav title="{{ popularData.title }}" />
+</view>

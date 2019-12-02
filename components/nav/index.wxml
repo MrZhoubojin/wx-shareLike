@@ -1,0 +1,8 @@
+<!--components/nav/index.wxml-->
+<view class="container">
+    <image class="" src="{{ count === 0 ? disLeftSrc : leftSrc }}"
+    bind:tap="onLeft" />
+    <text>{{ title }}</text>
+    <image class="" src="{{ count === 0 ? rightSrc : disRightSrc }}"
+    bind:tap="onRight" />
+</view>

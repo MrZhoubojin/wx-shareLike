@@ -1,0 +1,22 @@
+/* components/nav/index.wxss */
+
+.container{
+    width: 588rpx;
+	height: 80rpx;
+    background-color: #f7f7f7;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container image{
+    width: 80rpx;
+	height: 80rpx;
+}
+
+.container text{
+    font-size: 24rpx;
+    color: #000;
+    line-height: 80rpx;
+}

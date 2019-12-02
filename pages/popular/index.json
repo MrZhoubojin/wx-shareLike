@@ -1,5 +1,10 @@
 {
   "usingComponents": {
-    "z-like": "/components/like/index"
+    "z-like": "/components/like/index",
+    "z-date": "/components/time/index",
+    "z-nav": "/components/nav/index",
+    "z-movie": "/components/popular/movie/index",
+    "z-music": "/components/popular/music/index",
+    "z-essay": "/components/popular/essay/index"
   }
 }

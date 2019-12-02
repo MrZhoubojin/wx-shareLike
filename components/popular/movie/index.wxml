@@ -1,0 +1,6 @@
+<!--components/movie/index.wxml-->
+<view class="container">
+    <image class="bg-img" src="{{ bgImg }}" />
+    <image class="tag-img" src="{{ tagImg }}" />
+    <text class="content">{{ content }}</text>
+</view>
