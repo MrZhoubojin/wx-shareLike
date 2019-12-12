@@ -1,0 +1,12 @@
+/* components/share/index.wxss */
+.container{
+    height:60rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.share-Img{
+    width: 40rpx;
+    height: 40rpx;
+    align-self: center;
+}

@@ -1,6 +1,6 @@
 <!--components/movie/index.wxml-->
 <view class="container">
     <image class="bg-img" src="{{ bgImg }}" />
-    <image class="tag-img" src="{{ tagImg }}" />
+    <image class="tag-img" src="{{ type === 100 ? tagMovieImg : tagEssayImg }}" />
     <text class="content">{{ content }}</text>
 </view>

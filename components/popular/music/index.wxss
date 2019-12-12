@@ -1,1 +1,35 @@
 /* components/music/index.wxss */
+@import '../public.wxss';
+
+.container{
+    margin-bottom: 120rpx;
+}
+
+.container .container-bg{
+    width: 420rpx;
+    height: 420rpx;
+    margin: auto;
+    margin-top: 46rpx;
+    display: block;
+    position: relative;
+	box-shadow: 0rpx 2rpx 18rpx 0rpx 
+        rgba(109, 109, 109, 0.15);
+    border-radius: 50%;
+}
+
+.container .bg-img{
+    width: 420rpx;
+	height: 420rpx;
+	background-color: #858585;
+	box-shadow: 0rpx 2rpx 18rpx 0rpx 
+        rgba(109, 109, 109, 0.15);
+    border-radius: 50%;
+}
+
+.container .play-img{
+    width: 120rpx;
+    height: 120rpx;
+    position: absolute;
+    top: calc(50% - 60rpx);
+    left: calc(50% - 60rpx);
+}

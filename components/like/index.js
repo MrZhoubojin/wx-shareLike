@@ -28,6 +28,9 @@ Component({
         count: isLike ? count + 1 : count - 1,
         isLike: isLike
       })
+      this.triggerEvent('like', {
+        isLike: isLike
+      })
     }
   }
 })

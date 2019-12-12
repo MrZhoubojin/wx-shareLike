@@ -8,4 +8,43 @@
 .contaier-public{
     display: flex;
     flex-direction: row;
+    width: 100%;
+	height: 100rpx;
+	background-color: #ffffff;
+	box-shadow: 0rpx 2rpx 12rpx 0rpx 
+		rgba(201, 201, 201, 0.1);
+    border: solid 1rpx #eeeeee;
+    justify-content: space-between;
+}
+
+.contaier-public .contaier-public-left{
+    display: flex;
+}
+
+.contaier-public .contaier-public-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200rpx;
+}
+
+z-date, z-like, z-share{
+    align-self: center;
+}
+
+z-date{
+    margin-left: 30rpx;
+}
+
+z-like{
+    margin-left: 31rpx;
+}
+
+z-share{
+    margin-right: 31rpx;
+}
+
+.navi{
+    position: absolute;
+    bottom: 40rpx;
 }

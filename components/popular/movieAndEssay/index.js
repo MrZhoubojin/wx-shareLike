@@ -6,14 +6,16 @@ Component({
   properties: {
     content: String,
     title: String,
-    bgImg: String
+    bgImg: String,
+    type: Number
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    tagImg: '/components/popular/movie/image/movie@tag.png'
+    tagMovieImg: '/components/popular/movieAndEssay/image/movie@tag.png',
+    tagEssayImg: '/components/popular/movieAndEssay/image/essay@tag.png'
   },
 
   /**

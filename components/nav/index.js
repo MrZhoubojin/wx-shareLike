@@ -4,8 +4,9 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    count: Number,
-    title: String
+    title: String,
+    first: Boolean,
+    latest: Boolean
   },
 
   /**
@@ -23,10 +24,12 @@ Component({
    */
   methods: {
     onLeft (event) {
-
+      if (this.properties.latest) return
+      this.triggerEvent('left', {}, {})
     },
     onRight (event) {
-
+      if (this.properties.first) return
+      this.triggerEvent('right', {}, {})
     }
   }
 })

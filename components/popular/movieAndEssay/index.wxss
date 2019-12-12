@@ -1,0 +1,7 @@
+/* components/movie/index.wxss */ 
+@import '../public.wxss';
+
+.container .bg-img{
+    width: 100%;
+    height: 500rpx;
+}

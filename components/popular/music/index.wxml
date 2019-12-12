@@ -1,2 +1,10 @@
 <!--components/music/index.wxml-->
-<text>components/music/index.wxml</text>
+<view class="container">
+    <view class="container-bg">
+        <image class="bg-img" src="{{ bgImg }}" />
+        <image class="play-img" src="{{ playImg }}" />
+        <image class="play-img" src="{{ pauseImg }}" />
+    </view>
+    <image class="tag-img" src="{{ tagImg }}" />
+    <text class="content">{{ content }}</text>
+</view>

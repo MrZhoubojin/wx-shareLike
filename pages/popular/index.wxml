@@ -1,9 +1,31 @@
 <!--pages/popular/index.wxml-->
 <view class="contaier">
     <view class="contaier-public">
-        <z-like count="{{ popularData.fav_nums }}" isLike="{{ popularData.like_status === 0 ? false : true }}" />
-        <z-date index="{{ popularData.index.toString() > 0 ? popularData.index.toString() : '0' + popularData.index }}" />
+         <view class="contaier-public-left">
+            <z-date 
+                index="{{ popularData.index }}" time="{{ popularData.pubdate }}" />
+         </view>
+        <view class="contaier-public-right">
+            <z-like count="{{ popularData.fav_nums }}" bind:like="onLike"
+                isLike="{{ popularData.like_status === 0 ? false : true }}" />
+            <z-share />
+        </view>
     </view>
-    <z-movie bgImg="{{ popularData.image }}" content="{{ popularData.content }}" title="{{ popularData.title }}" />
-    <z-nav title="{{ popularData.title }}" />
+    <z-movieAndEssay
+        wx:if="{{ popularData.type === 100 || popularData.type === 300 }}"
+        bgImg="{{ popularData.image }}"
+        content="{{ popularData.content }}"
+        title="{{ popularData.title }}"
+        type="{{ popularData.type }}" />
+    <z-music
+        wx:if="{{ popularData.type === 200 }}"
+        bgImg="{{ popularData.image }}"
+        content="{{ popularData.content }}"
+        title="{{ popularData.title }}" />
+    <z-nav class="navi"
+        title="{{ popularData.title }}" 
+        first="{{ first }}"
+        latest="{{ latest }}"
+        bind:left="onNext"
+        bind:right="onPrevious" />
 </view>
